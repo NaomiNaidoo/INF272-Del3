@@ -1,0 +1,81 @@
+﻿
+@{
+    ViewBag.Title = "Quiz";
+}
+
+<h1>Quiz</h1>
+@Scripts.Render("~/bundles/jquery")
+
+<div id="quizContainer">
+    <a class="btn btn-default" href="/Home/Index">Back</a>
+    <h4>Select A Quiz Below</h4>
+
+    <hr />
+
+    <ul>
+        <li class="quizCard">
+
+            <h3>Where is the grass greenest</h3>
+            <hr />
+
+            Description: Test your environmental knowledge with this short quiz.
+        </li>
+        <li class="quizCard">
+
+            <h3>Where is the grass greenest</h3>
+            <hr />
+
+            Description: Test your environmental knowledge with this short quiz.
+        </li>
+        <li class="quizCard">
+
+            <h3>Where is the grass greenest</h3>
+            <hr />
+
+            Description: Test your environmental knowledge with this short quiz.
+        </li>
+    </ul>
+
+</div>
+
+<div id="actualQuiz">
+
+    <button onclick="OpenListOfQuizes()">Back</button>
+
+
+    <div class="questionCard">
+        <h3>Question 1: What gas hurts the ozone layer?</h3>
+        <hr />
+        <button>A) Oxygen</button>
+        <button>B) Oxygen</button>
+        <button>C) Oxygen</button>
+    </div>
+
+
+</div>
+
+<script>
+
+    $(function () {
+
+        $("#actualQuiz").addClass("hidding");
+
+    });
+
+    $(".quizCard").click(function () {
+
+        SelectAQuiz();
+    });
+
+    function SelectAQuiz() {
+        $("#actualQuiz").removeClass("hidding");
+        $("#quizContainer").addClass("hidding");
+    }
+
+    function OpenListOfQuizes() {
+        $("#actualQuiz").addClass("hidding");
+        $("#quizContainer").removeClass("hidding");
+    }
+
+
+</script>

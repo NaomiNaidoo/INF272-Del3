@@ -1,0 +1,68 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+}
+
+
+
+<div id="loginPage">
+    <h2 style="font-size: 100px; font-family: Balthazar; text-align: center;">ClimateControl.com</h2>
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <h2 class="centerAlignText">Login</h2>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <p>Login or create an account.</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <input class="inputField vertical-center" value="" placeholder="User Name" />
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <input class="inputField vertical-center" type="password" value="" placeholder="Password" />
+        </div>
+    </div>
+
+    <div class="row" style="margin-top: 20px">
+        <div class="col-md-12">
+            <a id="loginBtn" class="vertical-center" onclick="LoginUser()" href="/Home/Index">Login</a>
+        </div>
+    </div>
+
+
+    <div class="row" style="margin-top: 15px ">
+        <div style="text-align: center" class="col-md-12">
+            <a id="createBtn" class="centerAlignText" onclick="CreateUser()" href="/Login/CreateUser">Create user</a>
+        </div>
+    </div>
+
+
+
+</div>
+
+<script>
+
+    function LoginUser() {
+
+    }
+
+    function CreateUser() {
+
+    }
+
+</script>
+
+<style>
+    .logoutBtn {
+        display: none !important;
+    }
+</style>

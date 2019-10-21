@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewBag.Title = "Tasks";
+}
+
+<h1>Tasks</h1>
+
+
+<div id="taskContainer">
+    <a class="btn btn-default" href="/Home/Index">Back</a>
+
+    <hr />
+
+    <ul>
+        <li class="quizCard">
+
+            <h3>Recycle 1 plastic bottle today</h3>
+            <button onclick="completeTask('lying is a sin ...')">Complete</button>
+
+        </li>
+         <li class="quizCard">
+
+            <h3>Pick up any trash today</h3>
+            <button onclick="completeTask('This is lit ... thank you')">Complete</button>
+
+        </li>
+    </ul>
+
+</div>
+
+<script>
+    function completeTask(comment) {
+        alert(comment);
+    }
+
+</script>
